@@ -99,6 +99,6 @@ declare number variable to store  player one and two damage
     };
 
     /*******  The program gets started below *******/
-    fight(); 
+    fight();
 
 })();
