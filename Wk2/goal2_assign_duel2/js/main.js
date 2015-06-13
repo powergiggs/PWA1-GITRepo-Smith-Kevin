@@ -10,8 +10,9 @@
 
     console.log("FIGHT!!!"); // out string to console.log
 
-    //player name
-    var playerOne = ["Spiderman", 20, 100]; //declare variable for player one
+    //player name, health and damage store in array
+
+    var playerOne = ["Spiderman", 20, 100]; //
     var playerTwo = ["Batman", 20, 100];  //
 
 
