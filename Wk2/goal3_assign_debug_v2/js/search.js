@@ -1,3 +1,12 @@
+/*
+Name: Kevin Smith
+Date: 6/12/15
+Assignment: Week#2 DEBUG Search (v2)
+
+
+ */
+
+
 // Create privatized scope using a self-executing function
 (function(){
 	
@@ -8,19 +17,19 @@
 	;
 	
 	// Validates search query
-	var validqte == function(query){
+	var validqte = function(query){    // fix syntax error of double ==
 		
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) = " "){
+		while(query.charAt(0) === " "){
 			query = query.substring(1, query.length);
 		};
-		while(query.charAt(query.length-1) === ""){
-			query = query.substring(0, query.length-1);
-		;
+		while(query.charAt(query.length-1) === "") {
+            query = query.substring(0, query.length - 1);
+        };
 		
 		// Check search length, must have 3 characters
 		if(query.length < 3){
-			alert("Your search query is too small, try again.);
+			alert("Your search query is too small, try again."); // closing quotation added to string
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
@@ -31,7 +40,7 @@
 	};
 	
 	// Finds search matches
-	var search = function(query)
+	var search = function(query){   // add opening curly bracket to function syntax
 		
 		// split the user's search query string into an array
 		var queryArray = query.join(" ");
@@ -47,6 +56,7 @@
 			var dbTitleEnd = db[i].indexOf('|');
 			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
 			
+	
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
 			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
@@ -58,8 +68,8 @@
 				if(compare !== -1){
 					results.push(db[i]);
 				};
-			;
-		;
+			}; // add curly BRACKETS
+		}; // add curly BRACKETS
 		
 		results.sort();
 		
@@ -115,6 +125,6 @@
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
 		return false;
-	;
+	}; // add curly BRACKETS
 
 })();
