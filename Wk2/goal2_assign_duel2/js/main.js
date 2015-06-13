@@ -42,7 +42,7 @@
             playerOne[2]-=f1;
             playerTwo[2]-=f2;
 
-            console.log(playerOne[1]+": "+playerOne[2]+ " " + playerTwo[1]+":"+playerTwo[2]);
+            console.log(playerOne[0]+": "+playerOne[2]+ " " + playerTwo[0]+":"+playerTwo[2]);
 
             // print player one and two health and name to console.log
 
@@ -52,7 +52,7 @@
             if (result==="no winner")
             {
                 round++;
-                alert(playerOne[1]+":"+playerOne[2]+"  *ROUND "+round+" OVER"+"*  "+playerTwo[1]+":"+playerTwo[2]);
+                alert(playerOne[0]+":"+playerOne[2]+"  *ROUND "+round+" OVER"+"*  "+playerTwo[0]+":"+playerTwo[2]);
 
             } else{
                 alert(result);
