@@ -68,8 +68,8 @@ Assignment: Week#2 DEBUG Search (v2)
 				if(compare !== -1){
 					results.push(db[i]);
 				};
-			}; // add curly BRACKETS
-		}; // add curly BRACKETS
+			}; // add closing curly brackets
+		}; // add closing curly brackets
 		
 		results.sort();
 		
@@ -125,6 +125,6 @@ Assignment: Week#2 DEBUG Search (v2)
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
 		return false;
-	}; // add curly BRACKETS
+	}; // add closing curly brackets
 
 })();
