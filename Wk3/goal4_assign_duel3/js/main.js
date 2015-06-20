@@ -1,7 +1,7 @@
 /*
  * Name: Kevin Smith
- * Date: 6/12/15
- * Assignment: Week#2 DEVELOP DUEL #2
+ * Date: 6/19/15
+ * Assignment: Week#3 THE DUEL #3
  */
 
 
@@ -12,12 +12,31 @@
 
     //player name, health and damage store in array
 
-    var playerOne = ["Spiderman", 20, 100]; //
-    var playerTwo = ["Batman", 20, 100];  //
+    var fighter1 = { 
+		name: "Spiderman", 
+		damage: 20,
+		health: 100,
+	
+	}; //
+    var fighter2 = {
+		name: "Batman", 
+		damage: 20, 
+		health: 100,
+	
+	
+	};  //
+	
+	var fighters = [fighter1, fighter2];
+	
+	//console.log(fighters);
 
 
     //initiate round
     var round=0;
+	
+	
+			
+		
 
 
     /*
@@ -25,25 +44,38 @@
     Declare function to process randomly player health and damage during fight
 
     */
-
-    function fight(){
-        alert(playerOne[0]+":"+playerOne[2]+"  *START*  "+playerTwo[0]+":"+playerTwo[2]);
-        for (var i = 0; i < 10; i++)// for loop
+	
+	  
+	
+	
+	 function fight(){
+   	
+	
+	
+	
+	 var display1 = document.querySelectorAll('#kabal p');
+	 console.log(display1);
+	 display1.innerHTML = fighter1.name + fighter1.health ;
+	// alert(fighter1.name+":"+fighter1.health+"  *START*  "+fighter2.name+":"+fighter2.health);
+     for (var i = 0; i < 10; i++)// for loop
         // alert to user player one and player two name and health
-        {
-            //random formula is - Math.floor(Math.random() * (max - min) + min);
-            var minDamage1 = playerOne[1] * .5;
-            var minDamage2 = playerTwo [1]* .5;
-            var f1 = Math.floor(Math.random()*(playerOne[1]-minDamage1)+minDamage1);
-            var f2 = Math.floor(Math.random()*(playerTwo[1]-minDamage2)+minDamage2);
+       {
+			
+   			// document.getElementById("demo").innerHTML = "Hello World";
+				            //random formula is - Math.floor(Math.random() * (max - min) + min);
+            var minDamage1 = fighter1.damage * .5;
+            var minDamage2 = fighter2.damage * .5;
+            var f1 = Math.floor(Math.random()*(fighter1.damage-minDamage1)+minDamage1);
+            var f2 = Math.floor(Math.random()*(fighter2.damage-minDamage2)+minDamage2);
 
 
 
             //inflict damage
-            playerOne[2]-=f1;
-            playerTwo[2]-=f2;
+            fighter1.health-=f1;
+            fighter2.health-=f2;
 
-            console.log(playerOne[0]+": "+playerOne[2]+ " " + playerTwo[0]+":"+playerTwo[2]);
+            console.log(fighter1.name+": "+ fighter1.health+ " " + fighter2.name+":"+fighter2.health);
+			
 
             // print player one and two health and name to console.log
 
@@ -53,12 +85,17 @@
             if (result==="no winner")
             {
                 round++;
-                alert(playerOne[0]+":"+playerOne[2]+"  *ROUND "+round+" OVER"+"*  "+playerTwo[0]+":"+playerTwo[2]);
+				var roundDsp = document.querySelectorAll('#round');
+	 console.log(roundDsp);
+	 roundDsp.innerHTML = "Round " +round+ " Over" ;
+				
+              alert(fighter1.name+":"+fighter1.health+"  *ROUND "+round+" OVER"+"*  "+fighter2.name+":"+fighter2.health);
 
             } else{
-                alert(result);
+               	 roundDsp.innerHTML = result ;
+
                 break;
-            };
+           };
 
         };
     };
@@ -70,19 +107,24 @@
      */
     function winnerCheck(){
         var result="no winner";
-        if (playerOne[2]<1 && playerTwo[2]<1)
+        if (fighter1.health<1 && fighter2.health<1)
         {
             result = "You Both Die";
-        } else if(playerOne[2]<1){
-            result =playerTwo[0]+" WINS!!!"
-        } else if (playerTwo[2]<1)
+        } else if(fighter1.health<1){
+            result =fighter2.name+" WINS!!!"
+        } else if (fighter2.health<1)
         {
-            result = playerOne[0]+" WINS!!!"
+            result = fighter1.name+" WINS!!!"
         };
         return result;
     };
 
     /*******  The program gets started below *******/
-    fight();
+   //fight();
+   var btnClick = document.getElementsByTagName('A');
+	console.log(btnClick);
+	
+			btnClick.addEventListener('click', fight, false);
+	
 
 })();
