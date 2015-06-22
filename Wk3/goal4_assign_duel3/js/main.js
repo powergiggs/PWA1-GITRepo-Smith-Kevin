@@ -108,7 +108,7 @@
 				showFighter[1].innerHTML = result;
 				showFighter[0].innerHTML = "";
 				showFighter[2].innerHTML = "";
-				gameEnd.innerHTML ="DONE!!!";
+				gameEnd.innerHTML ="THE END!";
 				blueClick.removeEventListener('click', fight);
 				
 								            
