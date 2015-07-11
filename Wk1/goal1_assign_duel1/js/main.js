@@ -1,6 +1,6 @@
 /*
  * Name: Kevin Smith
- * Date: 6/6/15.
+ * Date: 7/11/15.
  * Assignment: Week#1 Analyze Duel
  */
 
