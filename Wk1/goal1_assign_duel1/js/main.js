@@ -85,10 +85,10 @@ declare number variable to store  player one and two damage
 
      */
     function winnerCheck(){
-        var result="no winner";
-        if (playerOneHealth<1 && playerTwoHealth<1)
+        var result="no winner"; // declare variable result with string value "no winner"
+        if (playerOneHealth<1 && playerTwoHealth<1) // check players health if less than one
         {
-            result = "You Both Die";
+            result = "You Both Die"; // if condition is true show result "both players die"
         } else if(playerOneHealth<1){
             result =playerTwoName+" WINS!!!"
         } else if (playerTwoHealth<1)
