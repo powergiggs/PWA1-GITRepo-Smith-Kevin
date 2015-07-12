@@ -2,8 +2,8 @@
 (function(){
 	
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
-	var resultsDIV = document.getElementById("results"),
-		searchInput = document.forms[0].search,
+	var resultsDIV = document.getElementById("results"), // access DOM div id and assign it a variable
+		searchInput = document.forms[0].search, // access forms attributes via DOM and assign it a variable
 		currentSearch = ''
 	;
 	
