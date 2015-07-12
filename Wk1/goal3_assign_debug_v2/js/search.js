@@ -1,3 +1,11 @@
+/*
+ * Name: Kevin Smith
+ * Date: 7/12/15.
+ * Assignment: Week#1 Debug 
+ */
+
+
+
 // Create privatized scope using a self-executing function
 (function(){
 	
