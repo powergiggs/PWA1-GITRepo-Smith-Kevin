@@ -103,7 +103,7 @@
 			// make the video link - THE NEXT LINE IS CORRECT.
 			html += '<p><a href=' + url + '>' + title + '</a></p>';
 		};
-		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.
+		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT. // push result to html page
 	};
 	
 	// The onsubmit event will be reviewed in upcoming Course Material.
