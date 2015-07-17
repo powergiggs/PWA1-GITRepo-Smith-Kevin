@@ -1,6 +1,6 @@
 /*
  * Name: Kevin Smith
- * Date: 6/12/15
+ * Date: 7/17/15
  * Assignment: Week#2 DEVELOP DUEL #2
  */
 
