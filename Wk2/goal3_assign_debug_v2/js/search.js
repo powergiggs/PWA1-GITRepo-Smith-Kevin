@@ -1,6 +1,6 @@
 /*
 Name: Kevin Smith
-Date: 6/12/15
+Date: 7/17/15
 Assignment: Week#2 DEBUG Search (v2)
 
 
@@ -54,13 +54,13 @@ Assignment: Week#2 DEBUG Search (v2)
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
 			var dbTitleEnd = db[i].indexOf('|');
-			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
+			var dbitem = db[i].toLowerCase().substring(0, dbTitleEnd);
 			
 	
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
 			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
-				var qitem = queryArray[ii].tolowercase();
+				var qitem = queryArray[ii].toLowerCase();
 				
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
