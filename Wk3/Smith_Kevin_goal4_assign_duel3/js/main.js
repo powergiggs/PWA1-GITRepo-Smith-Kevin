@@ -1,6 +1,6 @@
 /*
  * Name: Kevin Smith
- * Date: 6/19/15
+ * Date: 7/23/15
  * Assignment: Week#3THE DUEL #3
  */
 
