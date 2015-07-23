@@ -1,6 +1,6 @@
 /*
 Name: Kevin Smith
-Date: 06/19/2015
+Date: 07/23/2015
 Assignment: Week# Debug search v3
 
 */
@@ -11,7 +11,7 @@ console.log("-----------Breadcrumbs One-----------");
 	console.log("-----------Breadcrumbs two-----------");
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var resultsDIV = document.getElementById("results"),
-		searchInput = document.forms[0].search,
+		searchInput = document.forms[0].searssssssssch,
 		currentSearch = '';
 	console.log(searchInput.value);
 	
