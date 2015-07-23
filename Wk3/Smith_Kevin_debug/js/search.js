@@ -11,7 +11,7 @@ console.log("-----------Breadcrumbs One-----------");
 	console.log("-----------Breadcrumbs two-----------");
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
 	var resultsDIV = document.getElementById("results"),
-		searchInput = document.forms[0].searssssssssch,
+		searchInput = document.forms[0].search,
 		currentSearch = '';
 	console.log(searchInput.value);
 	
